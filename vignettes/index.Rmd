@@ -1,0 +1,28 @@
+---
+title: "Kosmas Workshop 29_July_2021"
+subtitle: "Bookdown Template"
+author: "Kathrine Stewart"
+date: "`r Sys.Date()`"
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: kat3stewart/bookdown_demo
+description: "A template for Rmarkdown-based project documentation"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      comment = "#>",
+                      collapse = TRUE)
+knitr::opts_knit$set(root.dir = '../')
+```
+
+
+```{r set_fold, include=FALSE}
+source("R/initial_folding.R")
+create_html_header("show") # either "show" or "fold"
+```
+
